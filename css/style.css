@@ -1,0 +1,376 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+ul li{
+    list-style: none;
+}
+ul{
+    padding: 0;
+}
+body{
+    background: linear-gradient(to right, rgba(0,0,0, 1),rgba(0,0,0,0.3)), url('../img/background.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+}
+.mt-400{
+	margin-top: 400px;
+}
+
+
+
+/* **********************************************
+***************************************************
+            Header Section Css Code Start
+***************************************************
+************************************************* */
+
+header{
+	background: transparent;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	margin-top: 30px;
+	z-index: 999;
+}
+.school-title{
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.school-title h1{
+    font-size: 50px;
+    font-weight: 900;
+}
+.school-title span{
+    color: #62e972;
+}
+.s1-icon{
+	color: #ffffff;
+}
+.s1-icon i{
+	color: #62e972;
+}
+.s2-icon i{
+	margin-left: 30px;
+}
+.s2-icon i:hover{
+	color: #ffffff;
+	cursor: pointer;
+}
+.navbar-brand{
+	font-size: 32px;
+	font-weight: 600;
+	color: #62e972 !important;
+}
+header .header-line{
+	width: 100%;
+	height: 3px;
+	background: #62e972;
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+}
+.main-menu ul li{
+	display: inline-block;
+	padding: 0 50px 10px 0;
+}
+.main-menu ul li a{
+	font-size: 18px;
+	color: #ffffff;
+}
+.main-menu ul li a:hover{
+	color: #62e972;
+}
+.login{
+	margin-left: 140px;
+}
+.login span{
+	padding: 12px 25px;
+	color: #ffffff;
+	position: relative;
+	font-size: 18px;
+	cursor: pointer;
+}
+.login span:hover{
+	color: #62e972;
+}
+
+.singup span{
+	background: #62e972;
+	padding: 12px 25px;
+	color: #0e5817;
+	position: relative;
+	font-size: 18px;
+	cursor: pointer;
+}
+.singup span:hover{
+	color: #020000;
+}
+.singup span::before{
+	content: '';
+	position: absolute;
+	width: 30%;
+	height: 100%;
+	background: #62e972;
+	top: 0;
+	left: -20px;
+	z-index: 1;
+	transform: skew(30deg);
+}
+.singup span::after{
+	content: '';
+	position: absolute;
+	width: 30%;
+	height: 100%;
+	background: rgb(99 233 114 / 40%);
+	top: 0;
+	left: -30px;
+	z-index: 1;
+	transform: skew(30deg);
+}
+
+
+/* **********************************************
+***************************************************
+            Header Section Css Code End
+***************************************************
+************************************************* */
+
+
+
+
+	/* ******************************************
+        *******************************************
+                Popup  Section Css Code Start
+        *******************************************
+    ************************************************* */
+
+    .login-box{
+		background: rgba(0,0,0, 0.6);
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 9999;
+		position: fixed;
+		display: none;
+		justify-content: center;
+		align-items: center;
+	  }
+	  .login-title-bar{
+		background: #ffffff;
+		padding: 8px 20px 5px 0;
+		border-top-left-radius: 30px;
+		border-top-right-radius: 30px;
+		border: 1px solid #3a0101;
+		width: 800px;
+	  }
+	  .fa-xmark{
+		color: #f00909;
+		font-size: 22px;
+		cursor: pointer;
+		margin-left: auto;
+	  }
+	  .ms-auto{
+		margin-right: 450px;
+	  }
+	  .login-card{
+		background: #ffffff;
+		width: 800px;
+		height: 500px;
+		overflow: hidden;
+	  }
+
+	  .login-singup-btn{
+		background-color: #ebf0f4;
+		border-top: 5px solid green;
+	  }
+	  .login-singup-btn ul li{
+		position: relative;
+		display: inline-block;
+	  }
+	  .login-singup-btn ul li span{
+		cursor: pointer;
+		padding: 12px 40px;
+		font-size: 20px;
+		color: green;
+	  }
+	  .login-singup-btn ul .sing-up{
+		background: green;
+		color: #ffffff;
+	  }
+	  .login-singup-btn ul .sing-up:hover{
+		background: rgb(0, 156, 0);
+	  }
+	  .login-singup-btn ul .sing-up::after{
+		content: '';
+		position: absolute;
+		width: 30%;
+		height: 100%;
+		background: green;
+		top: 0;
+		left: -16px;
+		transform: skewX(30deg);
+	  }
+	  .login-singup-btn ul .sing-up:hover::after,
+	  .login-singup-btn ul .sing-up:hover::before{
+		background: rgb(0, 156, 0);
+	  }
+	  .login-singup-btn ul .sing-up::before{
+		content: '';
+		position: absolute;
+		width: 30%;
+		height: 100%;
+		background: green;
+		top: 0;
+		right: -16px;
+		transform: skewX(30deg);
+	  }
+	  .login-singup-btn ul span{
+		display: block;
+	  }
+	  .login-form{
+		margin-left: 200px;
+		margin-top: 50px;
+	  }
+	  .login-form h5{
+		font-weight: 400;
+	  }
+	  .login-form input,
+	  .singup-form input{
+		width: 300px;
+		background: none;
+		border: none;
+		border-bottom: 1px solid green;
+		padding: 0 0 5px 0;
+	  }
+	  .login-form input:focus{
+		outline: none;
+	  }
+	  .login-c button{
+		border: none;
+		background: green;
+		color: #ffffff;
+		padding: 8px 80px;
+		/* border: 2px solid green; */
+	  }
+	  .login-c button:hover{
+		background: rgb(0, 156, 0);
+	  }
+	  .login-form .mb-4 a:hover{
+		color: rgb(195, 1, 1);
+	  }
+	  .not-member span{
+		color: rgb(252, 34, 34);
+		cursor: pointer;
+	  }
+	  .not-member span:hover{
+		color: rgb(221, 3, 3);
+	  }
+	  .singup-form{
+		width: 500px;
+		border: 1px solid green;
+	  }
+	  .singup-f{
+		margin: 30px 150px;
+	  }
+	  .singup-f input{
+		width: 100%;
+		padding-bottom:5px;
+		border: none;
+		border-bottom: 1px solid green;
+		margin: 0;
+	  }
+	  /* .row{
+		--bs-gutter-x:0;
+	  } */
+	  input:focus{
+		outline: none;
+	  }
+
+	/* ******************************************
+        *******************************************
+                Popup  Section Css Code End
+        *******************************************
+    ************************************************* */
+
+
+
+.user-info{
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+}
+.user-info img{
+    width: 100px;
+}
+.user-name h3{
+    font-size: 40px;
+    margin-top: 40px;
+    margin-left: 10px;
+}
+.user-email h5{
+    margin-top: 55px;
+}
+.user-profile button{
+    border: none;
+    background: green;
+    color: #ffffff;
+    padding: 10px 30px;
+    margin-top: 40px;
+}
+.user-profile button:hover{
+    background: #07c21d;
+}
+.fa-chevron-down,
+.fa-trash-can{
+    margin-left: 8px    ;
+}
+
+.user-info-box{
+    margin-top: 5px;
+    padding: 35px;
+    background: #ffffff;
+    border-radius: 8px;
+}
+.user-photo{
+    border: 3px solid green;
+    padding: 80px 0;
+}
+.user-photo img{
+    width: 130px;
+}
+.user-info-table{
+	margin-left: 50px;
+}
+.user-info-table h2{
+    background: green;
+    color: #ffffff;
+	padding: 10px 0;
+	margin-bottom: 20px;
+}
+.name input{
+	background: transparent;
+	border: none;
+	border-bottom: 1px solid green;
+	width: 100%	;
+}
+.edit button{
+	margin-top: 0;
+}
+.name label{
+	font-weight: 500;
+	letter-spacing: 1px;
+}
+::placeholder{
+	font-size: 14px;
+}
